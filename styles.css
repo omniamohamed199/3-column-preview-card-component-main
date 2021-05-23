@@ -1,0 +1,92 @@
+:root {
+    --main-bg-color: hsl(31, 77%, 52%);
+  }
+  body{
+   background:  hsl(0, 0%, 95%);
+   Font-size: 0.9375rem;
+   font-family: 'Lexend Deca', sans-serif;
+   font-weight: 400;
+   margin: 0;
+   color: hsla(0, 0%, 100%, 0.75);
+   
+}
+.container{
+    padding: 50px 10px;
+}
+:is(.Maincard1,.Maincard2,.Maincard3){
+    padding:2.75rem;
+}
+.card-header{
+    font-family:'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.card-body{
+    line-height: 1.7rem;
+    opacity: .8;
+    padding:1.5625rem 0.9375rem 1.5625rem 0;
+}
+.Maincard1{
+    background: var(--main-bg-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.Maincard2{
+    background: hsl(184, 100%, 22%);
+}
+.Maincard3{
+    background: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card-button button{
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: 0;
+    font-family: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}
+.Maincard1 .card-button button{
+    color: var(--main-bg-color);
+}
+.Maincard2 .card-button button{
+    color: hsl(184, 100%, 22%);
+}
+.Maincard3 .card-button button{
+    color: hsl(179, 100%, 13%);
+}
+.card-img{
+    line-height: 5rem;
+}
+.card-headText{
+    font-size: 34px;
+    color: white;
+}
+.card-button button:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-family: inherit;
+}
+@media only screen and (min-width:375px) and (max-width:1440px) {
+    .container{
+        display:flex;
+        flex-wrap: nowrap;
+        
+    }  
+    .card-body{
+        padding:1.5625rem 0 4.5625rem;
+    }
+    .Maincard1{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .Maincard3{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    
+
+    
+}
